@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate GPA</title>
+    <style>
+        body{
+            background-color:papayawhip;
+            align-content: center;
+        }
+        #menu,#submit-GPA,h2,#semAll,h1{
+            text-align: center;
+            color: crimson;
+            margin: auto;
+        
+        }
+        #menu td,#menu th{
+            text-align: center;
+            padding: 8px;
+        }
+        #table2{
+            border: wheat solid;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #h1{
+            background-color: #fe938c;
+            text-align: center;
+            color: black;
+            margin: auto;
+        }
+        #form{
+            background-color: #ead2ac ;
+            border: #ead2ac solid 2px;
+            width: 75%;
+            margin: auto;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">GPA</h1>
+    <ol id="GPAs">
+    </ol><br>
+    <form id = "form">
+        <table id="menu">
+            <tr>
+                <th>Subject</th>
+                <th>Code</th>
+                <th>Grade</th>
+            </tr>
+         <tr>
+                <th><input type="text" placeholder="Subject" id="new-subject"></th>
+                <th><input type="text" placeholder="Code Subject" id="new-code"></th>
+                <th>
+                    <select name ="gpa" id = "new-grade" itemref="gpa" >
+                        <optgroup label="Grade">
+                            <option value="A" >A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D+">D+</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </optgroup><br>
+                    </select>
+                </th><br>
+            
+            </tr>
+        </table>
+        <p id="semAll">
+            <input type="radio" id="sem1" name="semAll" value="sem1">
+            <label for="sem1">Semester1</label>
+            <input type="radio" id="sem2" name="semAll" value="sem2">
+            <label for="sem2">Semester2</label>
+        </p><br>
+        
+    <center><submit"><input type="submit"id="submit-GPA" value="Add"></submit></center><br><br>
+    </form><br><br>
+    <h1>Semester 1</h1> <br><br>
+    <table id="table2">
+        <thead>
+            <tr>
+                <td width="20%">
+                    <h2>Subject</h2>
+                </td>
+                <td width="20%">
+                    <h2>Code</h2>
+                </td>
+                <td width="20%">
+                    <h2>Grade</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="tableinfo">
+        
+        </tbody>
+    </table> <br><br><br><br><br>
+
+    <h1>Semester 2</h1> <br><br>
+    <table id="table2">
+        <thead>
+            <tr>
+                <td width="20%">
+                    <h2>Subject</h2>
+                </td>
+                <td width="20%">
+                    <h2>Code</h2>
+                </td>
+                <td width="20%">
+                    <h2>Grade</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="tableinfo2">
+        
+        </tbody>
+    </table> <br><br>
+    <table id="table2">
+        <tbody>
+            <tr>
+                <td width="50%">
+                    <h2> GPA of Majority : </h2>
+                </td>
+                <td id="gradeM">
+
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table id="table2">
+        <tbody>
+            <tr>
+                <td width="60%">
+                    <h2> GPA of Semester 1 : </h2>
+                </td>
+                <td id="gradeSem1">
+
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table id="table2">
+        <tr>
+            <td width="60%" >
+                <h2> GPA of Semester 2 : </h2>
+            </td>
+            <td id="gradeSem2">
+
+            </td>
+        </tr>
+    </table>
+    <script src="GPA.js"></script>
+</body>
+</html>
