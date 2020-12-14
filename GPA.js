@@ -9,7 +9,7 @@ var correct = false
 
 document.querySelector('#form').addEventListener('submit',function(event){
     event.preventDefault()
-    alert("gg")
+    alert("Added")
 
     let SubjectInput = document.getElementById("new-subject").value;
     let CodeInput = document.getElementById("new-code").value;
